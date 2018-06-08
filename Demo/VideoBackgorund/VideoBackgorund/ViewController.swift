@@ -75,3 +75,7 @@ enum TestCrash {
     }
 }
 
+class test {
+    
+}
+
