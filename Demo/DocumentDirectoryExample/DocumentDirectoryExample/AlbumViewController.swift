@@ -19,6 +19,7 @@ class AlbumViewController: UIViewController {
         super.viewDidLoad()
         configCollectionView()
         loadImages()
+        print("test revert code ...")
     }
 
     func loadImages() {
