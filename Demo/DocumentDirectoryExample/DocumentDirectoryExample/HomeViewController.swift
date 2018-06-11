@@ -32,8 +32,6 @@ class HomeViewController: UIViewController {
         })
 
         webServer.start(withPort: 8080, bonjourName: "GCD Web Server")
-        print("test revert code")
-        print("test revert code code")
 
         print("Visit \(webServer.serverURL) in your web browser")
     }
