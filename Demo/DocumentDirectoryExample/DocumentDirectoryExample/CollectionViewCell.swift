@@ -17,7 +17,6 @@ class CollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
-        print("Le Duc Tanh")
     }
     
     func config(image: UIImage?) {

@@ -32,7 +32,6 @@ class HomeViewController: UIViewController {
         })
 
         webServer.start(withPort: 8080, bonjourName: "GCD Web Server")
-        print("Vu Le Lam Son")
 
         print("Visit \(webServer.serverURL) in your web browser")
     }
