@@ -8,7 +8,6 @@
 
 import UIKit
 import Photos
-import GCDWebServer
 
 var i = 0
 var arrImageName: [String] = []
@@ -19,23 +18,8 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        initWebServer()
+
     }
-
-    func initWebServer() {
-
-        let webServer = GCDWebServer()
-
-        webServer.addHandler(forMethod: "GET", path: "/", request: GCDWebServerRequest.self, processBlock: { request in
-            return GCDWebServerDataResponse()
-
-        })
-
-        webServer.start(withPort: 8080, bonjourName: "GCD Web Server")
-
-        print("Visit \(webServer.serverURL) in your web browser")
-    }
-
 
     func saveImage(imageName: String) {
         let fileManager = FileManager.default
@@ -70,14 +54,14 @@ class HomeViewController: UIViewController {
     @IBAction func gotoAlbumTouchUpInside(_ sender: UIButton) {
         navigationController?.pushViewController(AlbumViewController(), animated: true)
     }
-
+    
     @IBAction func savePhotoButtonTouchInside(_ sender: UIButton) {
         i += 1
         let name = "test\(i).png"
         arrImageName.append(name)
         saveImage(imageName: name)
     }
-
+    
     @IBAction func gotoCameraRoll(_ sender: UIButton) {
         let status = PHPhotoLibrary.authorizationStatus()
         switch (status) {
@@ -103,11 +87,11 @@ extension HomeViewController: UIImagePickerControllerDelegate, UINavigationContr
 }
 
 extension UIViewController {
-
+    
     func alert(error: Error) {
         alert(title: "ERROR", msg: error.localizedDescription, buttons: ["OK"], handler: nil)
     }
-
+    
     func alert(title: String? = nil, msg: String, buttons: [String], handler: ((UIAlertAction) -> Void)?) {
         let alert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
         for button in buttons {
