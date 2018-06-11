@@ -69,6 +69,12 @@
                         <action selector="savePhotoButtonTouchInside:" destination="-1" eventType="touchUpInside" id="qF6-pg-L6P"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xck-1h-1VO">
+                    <rect key="frame" x="25" y="623.5" width="325" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -80,9 +86,12 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MDd-O7-j5k" secondAttribute="trailing" constant="25" id="WUl-37-Rla"/>
                 <constraint firstItem="k7y-HW-Dlb" firstAttribute="top" secondItem="Sht-wc-EtY" secondAttribute="bottom" constant="25" id="XRL-RN-yrg"/>
                 <constraint firstItem="Ckl-VU-zHu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="XyZ-We-4iz"/>
+                <constraint firstItem="Xck-1h-1VO" firstAttribute="top" secondItem="Ckl-VU-zHu" secondAttribute="bottom" constant="25" id="YWD-3w-kbc"/>
                 <constraint firstItem="k7y-HW-Dlb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="ZoJ-Fk-KIk"/>
                 <constraint firstItem="Ckl-VU-zHu" firstAttribute="top" secondItem="MDd-O7-j5k" secondAttribute="bottom" constant="25" id="bBr-tx-1ea"/>
+                <constraint firstItem="Xck-1h-1VO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="ebb-PV-XwP"/>
                 <constraint firstItem="Sht-wc-EtY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="ejz-E3-FKW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xck-1h-1VO" secondAttribute="trailing" constant="25" id="f2U-BL-Xpw"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="k7y-HW-Dlb" secondAttribute="trailing" constant="25" id="jVD-2a-d8F"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Sht-wc-EtY" secondAttribute="trailing" constant="25" id="kUN-V9-dOs"/>
                 <constraint firstItem="IFJ-A1-cnj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kiI-RW-UhN"/>
